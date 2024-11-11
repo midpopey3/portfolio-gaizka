@@ -1,24 +1,24 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import About from './components/About';
-import Projects from './components/Projects';  // Projects.tsx akan menggunakan ProjectCard di dalamnya
-import Contact from './components/Contact';
+import AboutPage from './components/AboutPage';
+import ProjectsPages from './components/ProjectsPages';  // Projects.tsx akan menggunakan ProjectCard di dalamnya
+import ContactPage from './components/ContactPage'
 import '../src/App.css'
+import HomePage from './components/HomePage';
 
 const App: React.FC = () => {
   return (
     <div className="bg-gradient-to-b from-red-300 to-purple-600 min-h-screen text-white">
-      {/* Navbar untuk navigasi di bagian atas */}
-      <Navbar />
+
+      <HomePage />
 
       {/* Bagian tentang diri sendiri */}
-      <About />
+      <AboutPage />
 
       {/* Bagian proyek yang memuat beberapa ProjectCard di dalam Projects */}
-      <Projects />
+      <ProjectsPages />
 
       {/* Bagian kontak */}
-      <Contact />
+      <ContactPage />
     </div>
   );
 };
